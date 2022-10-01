@@ -9,7 +9,7 @@ export const Container = styled.header`
   margin: 32px 0;
 
   > div {
-    width: 100%;
+    width: 90%;
     max-width: 1120px;
 
     display: flex;
