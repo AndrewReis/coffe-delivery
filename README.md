@@ -10,3 +10,11 @@ Nesse desafio, você vai desenvolver uma aplicação para gerenciar um carrinho 
 - Formulário para o usuário preencher o seu endereço
 - Exibir o total de itens no carrinho no Header
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
+
+---
+
+**run project**
+```
+Bash
+npm run dev
+```
