@@ -24,10 +24,10 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width:720px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -57,10 +57,7 @@ export const Items = styled.div`
 
 
   @media (max-width:720px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 `;

@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
+export const COLORS = {
+  'yellow': 'yellow',
+  'yellow-dark': 'yellow-dark',
+  'base-text': 'base-text',
+  'purple' : 'purple'
+} as const
+
 interface Props {
-  backgroundColor: string
+  backgroundColor: keyof typeof COLORS
 }
 
 export const Container = styled.div<Props>`
@@ -12,7 +19,7 @@ export const Container = styled.div<Props>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.backgroundColor};
+    background-color: ${props => props.theme[COLORS[props.backgroundColor]]};
     border-radius: 50%;
     padding: 8px;
   }

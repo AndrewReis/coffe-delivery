@@ -16,10 +16,10 @@ export function Banner() {
           </Headings>
 
           <Items>
-            <Item icon={ShoppingCart} backgroundColor='red' color='white' text='Compra simples e segura' />
-            <Item icon={Package} backgroundColor='red' color='white' text='Embalagem mantém o café intacto' />
-            <Item icon={Timer} backgroundColor='red' color='white' text='Entrega rápida e rastreada' />
-            <Item icon={Coffee} backgroundColor='red' color='white' text='O café chega fresquinho até você' />
+            <Item icon={ShoppingCart} backgroundColor='yellow-dark' text='Compra simples e segura' />
+            <Item icon={Package} backgroundColor='base-text' text='Embalagem mantém o café intacto' />
+            <Item icon={Timer} backgroundColor='yellow' text='Entrega rápida e rastreada' />
+            <Item icon={Coffee} backgroundColor='purple' text='O café chega fresquinho até você' />
           </Items>
         </div>
 
