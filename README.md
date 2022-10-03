@@ -14,7 +14,6 @@ Nesse desafio, você vai desenvolver uma aplicação para gerenciar um carrinho 
 ---
 
 **run project**
-```
-Bash
+``` Bash
 npm run dev
 ```
