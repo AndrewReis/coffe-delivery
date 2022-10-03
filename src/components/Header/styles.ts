@@ -4,18 +4,8 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
   margin: 32px 0;
-
-  > div {
-    width: 90%;
-    max-width: 1120px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 `;
 
 export const NavActions = styled.nav`

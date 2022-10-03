@@ -2,29 +2,27 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 5rem;
-`;
 
-export const Wrapper = styled.div`
-  width: 90%;
-  max-width: 1120px;
   display: grid;
   grid-template-columns: 588px 1fr;
   justify-content: center;
   gap: 56px;
 
   > div {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 66px;
   }
 
-  @media (max-width:720px) {
+  img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  @media (max-width:768px) {
     grid-template-columns: 1fr;
+
     img {
       display: none;
     }
@@ -56,7 +54,7 @@ export const Items = styled.div`
   grid-template-columns: 231px 1fr;
 
 
-  @media (max-width:720px) {
+  @media (max-width:768px) {
     grid-template-columns: 1fr;
     gap: 20px;
   }

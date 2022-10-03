@@ -7,6 +7,13 @@ export function Home() {
     <Container>
       <Header />
       <Banner />
+      <main>
+        <h1>Nossos cafés</h1>
+
+        <div>
+          <div>cafe</div>
+        </div>
+      </main>
     </Container>
   )
 }
