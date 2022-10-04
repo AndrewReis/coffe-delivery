@@ -1,6 +1,9 @@
 import { Banner } from "../../components/Banner";
+import { CoffeCard } from "../../components/CoffeCard";
 import { Header } from "../../components/Header";
-import { Container } from "./styles";
+
+
+import { Container, Grid } from "./styles";
 
 export function Home() {
   return(
@@ -10,9 +13,21 @@ export function Home() {
       <main>
         <h1>Nossos cafés</h1>
 
-        <div>
-          <div>cafe</div>
-        </div>
+        <Grid>
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+          <CoffeCard />
+        </Grid>
       </main>
     </Container>
   )
