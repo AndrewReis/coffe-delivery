@@ -18,4 +18,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  button {
+    cursor: pointer;
+    border: 0;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
 `
