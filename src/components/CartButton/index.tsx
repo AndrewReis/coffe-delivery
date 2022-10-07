@@ -9,7 +9,7 @@ interface Props {
 
 export function CartButton({ count }: Props) {
   return (
-    <Container to='/cart' title='Carrinho'>
+    <Container to='/check-out' title='Carrinho'>
       <ShoppingCart size={24} weight="fill"/>
       { count && ( <span> {count} </span>) }
     </Container>
