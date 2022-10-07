@@ -27,4 +27,10 @@ export const GlobalStyle = createGlobalStyle`
       cursor: not-allowed;
     }
   }
+
+  @media (max-width: 500px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `
