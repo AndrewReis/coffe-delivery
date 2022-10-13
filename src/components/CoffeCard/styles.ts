@@ -88,33 +88,54 @@ export const Footer = styled.footer`
       color: ${props => props.theme['base-text']};
     }
   }
+`;
 
-  div {
+export const ActionsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  button {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: ${props => props.theme['purple-dark']};
+    transition: background-color 200ms;
 
-    input {
-      width: 4.5rem;
-      height: 2.375rem;
-      background-color: ${props => props.theme['base-button']};
-      border-radius: 6px;
+    &:hover {
+      background-color: ${props => props.theme['purple']};
     }
+  }
+`;
 
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 2.375rem;
-      height: 2.375rem;
-      padding: 0.5rem;
-      border-radius: 6px;
-      background-color: ${props => props.theme['purple-dark']};
-      transition: background-color 200ms;
+export const AmountButton = styled.div`
+  width: 4.5rem;
+  height: 2.375rem;
 
-      &:hover {
-        background-color: ${props => props.theme['purple']};
-      }
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: ${props => props.theme['base-button']};
+
+  span {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    text-align: center;
+    color: ${props => props.theme['base-title']};
+  }
+
+  button {
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: ${props => props.theme['base-button']};
+
   }
 `;

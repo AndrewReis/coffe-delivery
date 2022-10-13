@@ -1,17 +1,15 @@
 import { ShoppingCart } from 'phosphor-react'
+import { useCart } from '../../context/cart-context'
 
-import { Container } from './styles'
+import { Container, Notification } from './styles'
 
+export function CartButton() {
+  const { cart } = useCart()
 
-interface Props {
-  count?: number
-}
-
-export function CartButton({ count }: Props) {
   return (
     <Container to='/check-out' title='Carrinho'>
       <ShoppingCart size={24} weight="fill"/>
-      { count && ( <span> {count} </span>) }
+      { cart.length > 0 && ( <Notification> {cart.length} </Notification>) }
     </Container>
   )
 }
