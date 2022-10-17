@@ -120,3 +120,17 @@ export const PaymentMethods = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const Command = styled.div`
+  width: 100%;
+  height: 80%;
+  margin-top: 1rem;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: ${props => props.theme['base-card']};
+  border-radius: 6px 36px;
+`;

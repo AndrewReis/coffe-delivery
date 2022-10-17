@@ -1,5 +1,6 @@
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
 import { Button } from "../../components/Button";
+import { CoffeSelected } from "../../components/CoffeSelected";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { defaultTheme } from "../../styles/themes/default";
@@ -12,7 +13,8 @@ import {
   LocalizationContainer,
   PublicPlaceContainer,
   PaymentMethodsContainer,
-  PaymentMethods
+  PaymentMethods,
+  Command
 } from "./styles";
 
 export function Checkout() {
@@ -70,6 +72,10 @@ export function Checkout() {
 
         <div>
           <strong>Cafés selecionados</strong>
+          <Command>
+            <CoffeSelected />
+            <CoffeSelected />
+          </Command>
         </div>
       </Main>
     </Container>
